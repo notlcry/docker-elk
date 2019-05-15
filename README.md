@@ -237,6 +237,9 @@ This will store Elasticsearch data inside `/path/to/storage`.
 user][esuser] is used within the Elasticsearch image, therefore the mounted data directory must be writable by the uid
 `1000`.
 
+- mkdir /opt/es/data/
+- chown -R 1000:1000 /opt/es/data/
+
 ## Extensibility
 
 ### How to add plugins
